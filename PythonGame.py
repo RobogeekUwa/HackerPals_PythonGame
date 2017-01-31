@@ -1,5 +1,4 @@
-# CITS1401 & CITS4406 Semester 1 2016
-# Project 2 Start up code
+# Python game: Snow leopard vs Billy goats start up code
 # Snow Leopards are played by the computer
 # Billy Goats are played by human
 # Advanced solution has the option of swapping the above or human vs human or computer vs computer
@@ -79,7 +78,7 @@ class Leopard:
 # the main function should control the flow of the program, allow the players to place the Goats and Leopards and decide who has won
 # it uses the random function for placing the Leopards
 def main():
-	win = GraphWin('Problem Solving and Programming - Project 2',wSize,wSize)
+	win = GraphWin('Snow leopard vs Billy goats ',wSize,wSize)
 	win.setBackground('green')
 	win.setCoords(0,0,wSize,wSize)
 	ptList = drawBoard(win)
@@ -342,7 +341,7 @@ def move_piece(piece, start_i, destination_i, ptList):
 		time.sleep(0.01)
 
 
-def drawBoard(win): # DO NOT change this function. It is provided to help you. It draws the board and returns a list of Points (24 points)
+def drawBoard(win): # It draws the board and returns a list of Points (24 points)
 	bk = wSize/8 # block size
 	ptList = []
 	for i in range(1,4):
